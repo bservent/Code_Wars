@@ -178,3 +178,57 @@ Expect only positive integer inputs. */
 function calcAge(age) {
 	return age * 365
 }
+
+//////////////////////////////////*
+
+/* Club Entry
+A night club will give you a word. For entrance, you need to provide the right number according to the provided word.
+
+Every given word will have a doubled letter, like "dd" in addiction. To answer the right number you need to find the doubled letter's position in the alphabets and multiply this number with 4.
+
+Create a function that takes the argument of word and returns the right number. */
+
+function clubEntry(word){
+  for (i = 0; i < word.length; i++)
+		if (word[i] == word[i+1])
+			return (word.charCodeAt(i) - 96) * 4
+}
+
+//if we need to find the exact placement of a letter in the alphbet we can use charCodeAt() method but we need
+//subtract 96 because in the ASCII Table the letter 'a' is represented as number 97 and z represent 122
+//so alphabet starts at 97 but we need one instead of 97 so we just subtract 96 for each letter representation
+
+//////////////////////////////////*
+
+/* Bitwise Operations
+A decimal number can be represented as a sequence of bits. To illustrate:
+
+6 = 00000110
+23 = 00010111
+From the bitwise representation of numbers, we can calculate the bitwise AND, bitwise OR and bitwise XOR. Using the example above:
+
+bitwiseAND(6, 23) ➞ 00000110
+
+bitwiseOR(6, 23) ➞ 00010111
+
+bitwiseXOR(6, 23) ➞ 00010001
+Write three functions to calculate the bitwise AND, bitwise OR and bitwise XOR of two numbers.
+
+Examples
+bitwiseAND(7, 12) ➞ 4
+
+bitwiseOR(7, 12) ➞ 15
+
+bitwiseXOR(7, 12) ➞ 11 */
+
+function bitwiseAND(n1, n2) {
+	return n1 & n2;
+}
+
+function bitwiseOR(n1, n2) {
+	return n1 | n2;
+}
+
+function bitwiseXOR(n1, n2) {
+	return n1 ^ n2;
+}
