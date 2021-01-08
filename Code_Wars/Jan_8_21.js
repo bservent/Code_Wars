@@ -64,3 +64,59 @@ function nextEdge(side1, side2) {
 }
 
 //////////////////////////////////*
+
+/* Power Calculator
+Create a function that takes voltage and current and returns the calculated power.
+
+Examples
+circuitPower(230, 10) ➞ 2300
+
+circuitPower(110, 3) ➞ 330
+
+circuitPower(480, 20) ➞ 9600
+
+Notes
+Requires basic calculation of electrical circuits (see Resources for info). */
+
+function circuitPower(voltage, current) {
+	return voltage*current
+}
+
+//////////////////////////////////*
+
+/* Convert Minutes into Seconds
+Write a function that takes an integer minutes and converts it to seconds.
+
+Examples
+convert(5) ➞ 300
+
+convert(3) ➞ 180
+
+convert(2) ➞ 120
+Notes
+Don't forget to return the result.
+If you get stuck on a challenge, find help in the Resources tab.
+If you're really stuck, unlock solutions in the Solutions tab. */
+
+function convert(minutes) {
+	return minutes * 60 
+}
+
+//////////////////////////////////*
+
+/* Correct the Mistakes
+Fix the code in the code tab to pass this challenge (only syntax errors). Look at the examples below to get an idea of what the function should do.
+
+Examples
+squared(5) ➞ 25
+
+squared(9) ➞ 81
+
+squared(100) ➞ 10000
+Notes
+READ EVERY WORD CAREFULLY, CHARACTER BY CHARACTER!
+Don't overthink this challenge; it's not supposed to be hard. */
+
+function squared(b) {
+	return b * b
+}
