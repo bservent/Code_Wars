@@ -48,3 +48,57 @@ function remainder(x, y) {
 	return (x % y)
 }
 
+/* Drinks Allowed?
+A bartender is writing a simple program to determine whether he should serve drinks to someone. He only serves drinks to people 18 and older and when he's not on break.
+
+Given the person's age, and whether break time is in session, create a function which returns whether he should serve drinks.
+
+Examples
+shouldServeDrinks(17, true) ➞ false
+
+shouldServeDrinks(19, false) ➞ true
+
+shouldServeDrinks(30, true) ➞ false
+Notes
+Return true or false.
+Some countries have a slightly higher drinking age, but for the purposes of this challenge, it will be 18. */
+
+function shouldServeDrinks(age, onBreak) {
+  return age >= 18 && !onBreak
+}
+
+/* Is the Number Less than or Equal to Zero?
+Create a function that takes a number as its only argument and returns true if it's less than or equal to zero, otherwise return false.
+
+Examples
+lessThanOrEqualToZero(5) ➞ false
+
+lessThanOrEqualToZero(0) ➞ true
+
+lessThanOrEqualToZero(-2) ➞ true */
+
+function lessThanOrEqualToZero(num) {
+	if (num <= 0) 
+		return true
+	else 
+		return false
+}
+
+/* The Farm Problem
+In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
+
+chickens = 2 legs
+cows = 4 legs
+pigs = 4 legs
+The farmer has counted his animals and he gives you a subtotal for each species. You have to implement a function that returns the total number of legs of all the animals.
+
+Examples
+animals(2, 3, 5) ➞ 36
+
+animals(1, 2, 3) ➞ 22
+
+animals(5, 2, 8) ➞ 50 */
+
+function animals(chickens, cows, pigs) {
+	return (chickens * 2) + (cows * 4) + (pigs * 4)
+}
