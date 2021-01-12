@@ -120,3 +120,62 @@ function printArray(number) {
   return newArray;
 }
 
+/* Many Operators!
+Some basic arithmetic operators are +, -, *, /, and %. In this challenge you will be given three parameters, num1, num2, and an operator. Use the operator on number 1 and 2.
+
+Examples
+operate(1, 2, "+") ➞ 3
+// 1 + 2 = 3
+
+operate(7, 10, "-") ➞ -3
+// 7 - 10 = -3
+
+operate(20, 10, "%") ➞ 0
+// 20 % 10 = 0
+Notes
+There will not be any divisions by zero. */
+
+function operate(num1, num2, operator) {
+	return eval(num1 + operator + num2)
+}
+
+/* Buggy Code (Part 2)
+Fix the code in the code tab to pass this challenge (only syntax errors). Look at the examples below to get an idea of what the function should do.
+
+Examples
+maxNum(3, 7) ➞ 7
+
+maxNum(-1, 0) ➞ 0
+
+maxNum(1000, 400) ➞ 1000
+Notes
+READ EVERY WORD CAREFULLY, CHARACTER BY CHARACTER!
+Don't overthink this challenge; it's not supposed to be hard. */
+
+function maxNum(n1,n2) {
+	if (n1<n2) {
+	  return n2
+	} else {
+	return n1
+  }
+}
+
+/* Area of a Rectangle
+Create a function that calculates the area of a rectangle. If the arguments are invalid, your function must return -1.
+
+Examples
+area(3, 4) ➞ 12
+
+area(10, 11) ➞ 110
+
+area(-1, 5) ➞ -1
+
+area(0, 2) ➞ -1 */
+
+function area(h, w) {
+	if ((h * w) > 0 && h > 0 && w > 0) {
+		return h * w
+	} else {
+		return -1
+	}
+}
