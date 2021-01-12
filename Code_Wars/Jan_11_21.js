@@ -1,4 +1,4 @@
-1/11/21 CodeWars
+/* 1/11/21 CodeWars */
 
 //////////////////////////////////*
 
@@ -54,5 +54,69 @@ If you're really stuck, unlock solutions in the Solutions tab. */
 
 function boolToString(flag){
 	return flag.toString()
+}
+
+/* Buggy Code (Part 1)
+Fix the code in the code tab to pass this challenge (only syntax errors). Look at the examples below to get an idea of what the function should do.
+
+Examples
+cubes(3) ➞ 27
+
+cubes(5) ➞ 125
+
+cubes(10) ➞ 1000
+Notes
+READ EVERY WORD CAREFULLY, CHARACTER BY CHARACTER!
+Don't overthink this challenge; it's not supposed to be hard. */
+
+function cubes(a) {
+	return a ** 3
+}
+
+/* Two Makes Ten
+Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.
+
+Examples
+makesTen(9, 10) ➞ true
+
+makesTen(9, 9) ➞ false
+
+makesTen(1, 9) ➞ true
+Notes
+Don't forget to return the result. */
+
+function makesTen(a, b) {
+	if(a === 10) {
+		return true
+} else if (b === 10) {
+	return true
+} else if ((a + b) === 10) {
+		return true
+} else {
+		return false
+	}
+}
+
+/* Buggy Code (Part 5)
+Mubashir created an infinite loop! Help him by fixing the code in the code tab to pass this challenge. Look at the examples below to get an idea of what the function should do.
+
+Examples
+printArray(1) ➞ [1]
+
+printArray(3) ➞ [1, 2, 3]
+
+printArray(6) ➞ [1, 2, 3, 4, 5, 6]
+Notes
+READ EVERY WORD CAREFULLY, CHARACTER BY CHARACTER!
+Don't overthink this challenge; it's not supposed to be hard. */
+
+function printArray(number) {
+  var newArray = [];
+
+  for(var i = 1; i <= number;i++) {
+    newArray.push(i);
+  }
+
+  return newArray;
 }
 
