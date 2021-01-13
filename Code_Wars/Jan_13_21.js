@@ -61,3 +61,48 @@ function and(a, b) {
 	}
 }
 
+//a divided by b must have no remainder == true
+//a divided by b with remainder == false
+
+function dividesEvenly(a, b) {
+	if(a % b == 0) {
+		return true
+	}else{
+		return false
+	}
+}
+
+/* Concatenate First and Last Name into One String
+Given two strings, firstName and lastName, return a single string in the format "last, first".
+
+Examples
+concatName("First", "Last") ➞ "Last, First"
+
+concatName("John", "Doe") ➞ "Doe, John"
+
+concatName("Mary", "Jane") ➞ "Jane, Mary" */
+
+function concatName(firstName, lastName) {
+	var str = lastName.concat(", " + firstName)
+	return str}
+
+
+/*   Buggy Code (Part 4)
+  Emmy has written a function that returns a greeting to users. However, she's in love with Mubashir, and would like to greet him slightly differently. She added a special case in her function, but she made a mistake.
+  
+  Can you help her?
+  
+  Examples
+  greeting("Matt") ➞ "Hello, Matt!"
+  
+  greeting("Helen") ➞ "Hello, Helen!"
+  
+  greeting("Mubashir") ➞ "Hello, my Love!" */
+
+  function greeting(name) {
+    if (name != "Mubashir")
+      return "Hello, " + name + "!";
+    if(name == "Mubashir") {
+      return "Hello, my Love!";
+    }
+  }
