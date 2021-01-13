@@ -121,3 +121,50 @@ function divisibleByFive(n) {
 	}
 }
 
+/* Regex Series: Even Number?
+Write a regular expression that matches only an even number. Numbers will be presented as strings.
+
+Examples
+"2341" ➞ false
+
+"132" ➞ true
+
+"29" ➞ false
+
+"5578" ➞ true */
+
+let x = /[02468]$/
+
+/* Area of a Triangle
+Write a function that takes the base and height of a triangle and return its area.
+
+Examples
+triArea(3, 2) ➞ 3
+
+triArea(7, 4) ➞ 14
+
+triArea(10, 10) ➞ 50 */
+
+function triArea(base, height) {
+	return (base*height)/2
+}
+
+/* Return Negative
+Create a function that takes a number as an argument and returns negative of that number. Return negative numbers without any change.
+
+Examples
+returnNegative(4) ➞ -4
+
+returnNegative(15) ➞ -15
+
+returnNegative(-4) ➞ -4
+
+returnNegative(0) ➞ 0 */
+
+function returnNegative(n) {
+	if (n > 0) {
+		return -1 * (n)
+	}else{
+		return n
+	}
+}
