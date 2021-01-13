@@ -60,3 +60,64 @@ function area(h, w) {
 	}
 }
 
+/* Is the String Empty?
+Create a function that returns true if a string is empty and false otherwise.
+
+Examples
+isEmpty("") ➞ true
+
+isEmpty(" ") ➞ false
+
+isEmpty("a") ➞ false
+Notes
+A string containing only whitespaces " " does not count as empty.
+Don't forget to return the result.
+If you get stuck on a challenge, find help in the Resources tab.
+If you're really stuck, unlock solutions in the Solutions tab. */
+
+function isEmpty(s) {
+	if (s === "") {
+		return true
+	}else{
+		return false
+	}
+}
+
+/* Frames Per Second
+Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.
+
+Examples
+frames(1, 1) ➞ 60
+
+frames(10, 1) ➞ 600
+
+frames(10, 25) ➞ 15000
+Notes
+FPS stands for "frames per second" and it's the number of frames a computer screen shows every second. */
+
+function frames(minutes, fps) {
+	return (60*fps) * minutes
+}
+
+/* Check if an Integer is Divisible By Five
+Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
+
+Examples
+divisibleByFive(5) ➞ true
+
+divisibleByFive(-55) ➞ true
+
+divisibleByFive(37) ➞ false
+Notes
+Don't forget to return the result.
+If you get stuck on a challenge, find help in the Resources tab.
+If you're really stuck, unlock solutions in the Solutions tab. */
+
+function divisibleByFive(n) {
+	if (n % 5 == 0) {
+		return true
+	}else{
+		return false
+	}
+}
+
