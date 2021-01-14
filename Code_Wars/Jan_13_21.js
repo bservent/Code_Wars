@@ -106,3 +106,53 @@ function concatName(firstName, lastName) {
       return "Hello, my Love!";
     }
   }
+
+/* Compare Strings by Count of Characters
+Create a function that takes two strings as arguments and return either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
+
+Examples
+comp("AB", "CD") ➞ true
+
+comp("ABC", "DE") ➞ false
+
+comp("hello", "edabit") ➞ false */
+
+function comp(str1, str2) {
+	if (str1.length === str2.length) {
+		return true
+	}else{
+		return false
+	}
+}
+
+/* Multiple of 100
+Create a function that takes an integer and return true if it's divisible by 100, otherwise return false.
+
+Examples
+divisible(1) ➞ false
+
+divisible(1000) ➞ true
+
+divisible(100) ➞ true */
+
+function divisible(num) {
+	if(num % 100 == 0 ) {
+		return true
+	}else{
+		return false
+	}
+}
+
+/* Sum of Polygon Angles
+Given an n-sided regular polygon n, return the total sum of internal angles (in degrees).
+
+Examples
+sumPolygon(3) ➞ 180
+
+sumPolygon(4) ➞ 360
+
+sumPolygon(6) ➞ 720 */
+
+function sumPolygon(n) {
+	return (n-2) * 180
+}
