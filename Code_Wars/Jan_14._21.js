@@ -98,3 +98,68 @@ All numbers will be positive. */
 function stringInt(str) {
 	return parseInt(str)
 }
+
+/* Format I: Template String
+Write a template string according to the following example:
+
+Example
+const a = "John";
+const b = "Joe";
+const c = "Jack";
+const template = "your template string" ➞ "Their names were:  John,  Joe  and  Jack." */
+
+// modify the template variable to be a template string 
+function format(a, b, c) {
+  // the result string must give: "Their names were: a, b and c."
+    const names = (a, b, c)
+    const template = `Their names were: ${a}, ${b} and ${c}.`
+    return template
+  }
+
+/*   Evaluate an Equation
+Create a function that evaluates an equation.
+
+Examples
+eq("1+2") ➞ 3
+
+eq("6/(9-7)") ➞ 3
+
+eq("3+2-4") ➞ 1 */
+
+function eq(evaluate) {
+	return eval(evaluate)
+}
+
+/* Miserable Parody of a Calculator
+Create a function that will handle simple math expressions. The input is an expression in the form of a string.
+
+Examples
+calculator("23+4") ➞ 27
+
+calculator("45-15") ➞ 30
+
+calculator("13+2-5*2") ➞ 5
+
+calculator("49/7*2-3") ➞ 11 */
+
+function calculator(str) {
+	return eval(str)
+}
+
+/* Movie Theatre Admittance
+Write a function that checks whether a person can watch an MA15+ rated movie. One of the following two conditions is required for admittance:
+
+The person is at least 15 years old.
+They have parental supervision.
+The function accepts two parameters, age and isSupervised. Return a boolean.
+
+Examples
+acceptIntoMovie(14, true) ➞ true
+
+acceptIntoMovie(14, false) ➞ false
+
+acceptIntoMovie(16, false) ➞ true */
+
+function acceptIntoMovie(age, isSupervised) {
+	return (age >= 15 || isSupervised)
+}
