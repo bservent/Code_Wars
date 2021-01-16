@@ -81,3 +81,78 @@ function isEven(n) {
 		return false
 	}
 }
+
+/* Using Ternary Operators
+The ternary operator (sometimes called Conditional Expressions) in JavaScript is an alternative to the if... else... statement.
+
+It is written in the format:
+
+condition ? result_if_true : result_if_false
+Ternary operators are often more compact than multi-line if statements, and are useful for simple conditional tests.
+
+For example:
+
+is_nice = true
+
+// Using ternary operator.
+state = is_nice ? "nice" : "not nice"
+
+// Equivalent code using multi-line if statements.
+if (is_nice)
+  state = "nice"
+else
+  state = "not nice"
+Write a function that uses the ternary operator to return "yeah" if b is true, and "nope" otherwise. */
+
+const yeah_nope = (bool) => bool ? "yeah" : "nope";
+
+/* Reverse an Array
+Write a function to reverse an array.
+
+Examples
+reverse([1, 2, 3, 4]) ➞ [4, 3, 2, 1]
+
+reverse([9, 9, 2, 3, 4]) ➞ [4, 3, 2, 9, 9]
+
+reverse([]) ➞ []
+Notes
+Don't forget to return the result.
+If you get stuck on a challenge, find help in the Resources tab.
+If you're really stuck, unlock solutions in the Solutions tab. */
+
+const reverse = (arr) => arr.reverse();
+
+/* Minimal IV: if-else if-else Inferno
+Check the principles of minimalist code in the intro to the first challenge.
+
+In the Code tab you will find a code that is missing a single character in order to pass the tests. However, your goal is to submit a function as minimalist as possible. Use the tips in the tips section below.
+
+Write a function that returns the boolean true if the given number is zero, the string "positive" if the number is greater than zero or the string "negative" if it's smaller than zero.
+
+Tips
+Executing a return will effectively end your function.
+
+For example, the code:
+
+function compare_to_100 (x) {
+  if (x > 100) {
+      return "greater"
+  } else if (x < 100) {
+        return "smaller"
+    } else {
+      return "equal"
+    }
+}
+Can be simplified to:
+
+function compare_to_100 (x) {
+    if (x > 100) return "greater"
+    if (x < 100) return "smaller"
+    return "equal"
+}
+If x is greater than 100, JavaScript will not execute the code past the first return.
+If x is smaller than 100, JavaScript will not execute the code inside the first if statement or past the second return.
+If x is equal to 100, JavaScript will not execute the code inside the two if statements.
+This can only be used if you have a return inside your if statement. */
+
+const equilibrium = (x) => (x > 0) ? "positive" : (x < 0) ? "negative" : true;
