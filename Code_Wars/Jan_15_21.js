@@ -156,3 +156,48 @@ If x is equal to 100, JavaScript will not execute the code inside the two if sta
 This can only be used if you have a return inside your if statement. */
 
 const equilibrium = (x) => (x > 0) ? "positive" : (x < 0) ? "negative" : true;
+
+/* Return Negative
+Create a function that takes a number as an argument and returns negative of that number. Return negative numbers without any change.
+
+Examples
+returnNegative(4) ➞ -4
+
+returnNegative(15) ➞ -15
+
+returnNegative(-4) ➞ -4
+
+returnNegative(0) ➞ 0 */
+
+const returnNegative = (n) => (n > 0) ? n * -1 : n;
+
+/* Rotate Max Number
+Create a function which takes a number and returns the maximum value by rearranging its digits.
+
+Examples
+rotateMaxNumber(123) ➞ 321
+
+rotateMaxNumber("001") ➞ 100
+
+rotateMaxNumber(999) ➞ 999 */
+
+function rotateMaxNumber(num) {
+	var string = num.toString(num.length).split("");
+	string.sort(function(a,b){return b-a});
+	var number = string.join('')
+	return Number(number)
+}
+
+/* To the Power of _____
+Create a function that takes a base number and an exponent number and returns the calculation.
+
+Examples
+calculateExponent(5, 5) ➞ 3125
+
+calculateExponent(10, 10) ➞ 10000000000
+
+calculateExponent(3, 3) ➞ 27 */
+
+function calculateExponent(num, exp) {
+	return Math.pow(num, exp)
+}
