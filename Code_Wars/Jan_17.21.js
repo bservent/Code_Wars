@@ -49,3 +49,53 @@ function oddOrEven(s) {
 		return false
 	}
 }
+
+/* Inches to Feet
+Create a function that accepts a measurement value in inches and returns the equivalent of the measurement value in feet.
+
+Examples
+inchesToFeet(324) ➞ 27
+
+inchesToFeet(12) ➞ 1
+
+inchesToFeet(36) ➞ 3 */
+
+function inchesToFeet(inches) {
+	if( (inches) >= 12 == true) {
+		return inches / 12
+	}else{
+		return 0
+	}
+}
+
+/* Among Us Imposter Formula
+Create a function that calculates the chance of being an imposter. The formula for the chances of being an imposter is 100 × (i / p) where i is the imposter count and p is the player count. Make sure to round the value to the nearest integer and return the value as a percentage.
+
+Examples
+imposterFormula(1, 10) ➞ "10%"
+
+imposterFormula(2, 5) ➞ "40%"
+
+imposterFormula(1, 8) ➞ "13%" */
+
+function imposterFormula(i, p) {
+	return Math.round(100 * (i / p)) + '%';
+}
+
+/* Fix the Broken Code
+A student learning JavaScript was trying to make a function that sorts all the letters of a word, but their code is broken, and they can't figure out why.
+
+Spot and fix the error(s) in the code to make the function work.
+
+Examples
+sortWord("dcba") ➞ "abcd"
+
+sortWord("Unpredictable") ➞ "Uabcdeeilnprt"
+
+sortWord("pneumonoultramicroscopicsilicovolcanoconiosis") ➞ "aacccccceiiiiiilllmmnnnnooooooooopprrsssstuuv"
+ */
+
+function sortWord(word) {
+	return word.split('').sort().join('');
+}
+
