@@ -111,3 +111,65 @@ function isOdd(num) {
 		return false
 	}
 }
+
+/* Triangle and Parallelogram Area Finder
+Write a function that accepts base (decimal), height (decimal) and shape ("triangle", "parallelogram") as input and calculates the area of that shape.
+
+Examples
+areaShape(2, 3, "triangle") ➞ 3
+
+areaShape(8, 6, "parallelogram") ➞ 48
+
+areaShape(2.9, 1.3, "parallelogram") ➞ 3.77 */
+
+function areaShape(base, height, shape) {
+	if (shape == "triangle") {
+		return .5 * (base * height)
+	}else{
+		return base * height
+	}
+}
+
+/* Solve the Equation
+Create a function that takes an equation (e.g. "1+1"), and returns the answer.
+
+Examples
+equation("1+1") ➞ 2
+
+equation("7*4-2") ➞ 26
+
+equation("1+1+1+1+1") ➞ 5 */
+
+function equation(s) {
+	return eval(s)
+}
+
+/* Pages and Chapters
+Write a function that returns the closest chapter to the current page you are at. If two chapters are similarly close, return whichever has the higher page.
+
+Examples
+closestToPage({
+  "Chapter 1" : 1,
+  "Chapter 2" : 15,
+  "Chapter 3" : 37
+}, 10) ➞ "Chapter 2"
+
+
+closestToPage({
+  "New Beginnings" : 1,
+  "Strange Developments" : 62,
+  "The End?" : 194,
+  "The True Ending" : 460
+}, 200) ➞ "The End?"
+
+
+closestToPage({
+  "Chapter 1a" : 1,
+  "Chapter 1b" : 5
+}, 3) ➞ "Chapter 1b" */
+
+function closestToPage(chapters, page) {
+	var keys = Object.keys(chapters)
+	var val = Object.values(chapters).map(x => Math.abs(x - page)) 
+	return keys[val.lastIndexOf(Math.min(...val))]
+}
