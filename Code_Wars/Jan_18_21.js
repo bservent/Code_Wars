@@ -63,3 +63,51 @@ function profitableGamble(prob, prize, pay) {
 		return false
 	}
 }
+
+/* Front 3 - Slice Check Repeat Concatenate
+Create a function that takes a string; we'll say that the front is the first three characters of the string. If the string length is less than three characters, the front is whatever is there. Return a new string, which is three copies of the front.
+
+Examples
+frontThree("Python") ➞ "PytPytPyt"
+
+frontThree("Cucumber") ➞ "CucCucCuc"
+
+frontThree("bioshock") ➞ "biobiobio" */
+
+function frontThree(str) {
+	var array1 = str.slice(0,3)
+	return array1 + array1 + array1
+}
+
+/* Return the Last Element in an Array
+Create a function that accepts an array and returns the last item in the array.
+
+Examples
+getLastItem([1, 2, 3]) ➞ 3
+
+getLastItem(["cat", "dog", "duck"]) ➞ "duck"
+
+getLastItem([true, false, true]) ➞ true  */
+
+let getLastItem = (arr) => arr.pop()
+
+/* Fix the Error: Check Whether a Given Number Is Odd
+Éowyn has written the function isOdd() to check if a given number is odd or not. Unfortunately, the function does not return the correct result for all the inputs. Help her fix the error.
+
+function isOdd(num){
+  ret n % 19 += 123;
+}
+Examples
+isOdd(-5) ➞ true
+
+isOdd(25) ➞ true
+
+isOdd(0) ➞ false */
+
+function isOdd(num) {
+	if (num % 2 != 0) {
+		return true
+	}else{
+		return false
+	}
+}
