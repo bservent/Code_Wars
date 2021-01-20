@@ -109,3 +109,46 @@ function concat(arr1, arr2) {
 	return arr1.concat(arr2)
 }
 
+/* On/Off Switches
+Create a function that returns how many possible outcomes can come from a certain number of switches (on / off). In other words, for a given number of switches, how many different combinations of on and off can we have?
+
+Examples
+posCom(1) ➞ 2
+
+posCom(3) ➞ 8
+
+posCom(10) ➞ 1024 */
+
+function posCom(num) {
+	return Math.pow(2,num)
+}
+
+/* Burglary Series (09): Filter Values
+The insurance guy calls, the policy you chose doesn't cover values below 5000€, it wouldn't dignify your status you said at the time. Given an object with a list of the stolen items, return a copy of that list without the values below 5000.
+
+Examples
+{ tv: 4999, guitar:5000, fork: 5001 } ➞ { guitar:5000, fork: 5001 }
+
+{ tv: 4999 } ➞ {}
+
+{ guitar: 5000 } ➞ { guitar: 5000 }
+
+{} ➞ {} */
+
+function filterValues(obj) {
+	return Object.fromEntries(Object.entries(obj).filter(item => item[1] >= 5000))
+}
+
+/* Find the Index (Part #2)
+Create a function that searches for the index of a given item in an array. If the item is present, it should return the index, otherwise, it should return -1.
+
+Examples
+search([1, 2, 3, 4], 3) ➞ 2
+
+search([2, 4, 6, 8, 10], 8) ➞ 3
+
+search([1, 3, 5, 7, 9], 11) ➞ -1 */
+
+function search(arr, item) {
+	return arr.indexOf(item)
+}
