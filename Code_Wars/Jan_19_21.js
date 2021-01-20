@@ -59,5 +59,53 @@ function drop(arr, val) {
 	return arr.slice(val)
 }
 
+/* Find the Index
+Create a function that takes an array and a string as arguments and return the index of the string.
 
+Examples
+findIndex(["hi", "edabit", "fgh", "abc"], "fgh") ➞ 2
+
+findIndex(["Red", "blue", "Blue", "Green"], "blue") ➞ 1
+
+findIndex(["a", "g", "y", "d"], "d") ➞ 3
+
+findIndex(["Pineapple", "Orange", "Grape", "Apple"], "Pineapple") ➞ 0 */
+
+function findIndex(arr, str) {
+	for (let i = 0; i < arr.length; i++) {
+		if ( arr[i] == str ) {
+			return arr.indexOf(str)
+		}
+	}
+}
+
+/* Convert All Array Items to String
+Create a function that takes an array of integers and strings. Convert integers to strings and return the new array.
+
+Examples
+parseArray([1, 2, "a", "b"]) ➞ ["1", "2", "a", "b"]
+
+parseArray(["abc", 123, "def", 456]) ➞ ["abc", "123", "def", "456"]
+
+parseArray([1, 2, 3, 17, 24, 3, "a", "123b"]) ➞ ["1", "2", "3", "17", "24", "3", "a", "123b"]
+
+parseArray([]) ➞ [] */
+
+function parseArray(arr) {
+	return arr.map(String)
+}
+
+/* Concatenating Two Integer Arrays
+Create a function to concatenate two integer arrays.
+
+Examples
+concat([1, 3, 5], [2, 6, 8]) ➞ [1, 3, 5, 2, 6, 8]
+
+concat([7, 8], [10, 9, 1, 1, 2]) ➞ [7, 8, 10, 9, 1, 1, 2]
+
+concat([4, 5, 1], [3, 3, 3, 3, 3]) ➞ [4, 5, 1, 3, 3, 3, 3, 3] */
+
+function concat(arr1, arr2) {
+	return arr1.concat(arr2)
+}
 
