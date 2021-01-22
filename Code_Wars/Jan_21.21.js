@@ -51,4 +51,52 @@ incrementItems([-1, -2, -3, -4]) ➞ [0, -1, -2, -3] */
 
 var incrementItems = (arr) => arr.map(x => (x + 1))
 
+/* Four Passengers and a Driver
+A typical car can hold four passengers and one driver, allowing five people to travel around. Given n number of people, return how many cars are needed to seat everyone comfortably.
 
+Examples
+carsNeeded(5) ➞ 1
+
+carsNeeded(11) ➞ 3
+
+carsNeeded(0) ➞ 0 */
+
+function carsNeeded(n) {
+	return Math.ceil(n / 5);
+}
+
+/* Reverse Psychology
+For this challenge, you will NOT be given a string. Your task isn't to add "Do not" before the given string. If there is no given string, you will not return "Do not do anything." Do not check the examples to know how to do this challenge.
+
+Examples
+reversePsychology("wash the dishes") ➞ "Do not wash the dishes."
+
+reversePsychology("eat your lunch") ➞ "Do not eat your lunch."
+
+reversePsychology("go to school") ➞ "Do not go to school." */
+
+function reversePsychology(s) { 
+	if ( s == undefined) {
+		return 'Do not do anything.'
+	}else{
+		return 'Do not ' + s + '.'
+	}
+}
+/* 
+Check String for Spaces
+Create a function that returns true if a string contains any spaces.
+
+Examples
+hasSpaces("hello") ➞ false
+
+hasSpaces("hello, world") ➞ true
+
+hasSpaces(" ") ➞ true
+
+hasSpaces("") ➞ false
+
+hasSpaces(",./!@#") ➞ false */
+
+function hasSpaces(str) {
+	return (str.indexOf(' ') >= 0) 
+}
