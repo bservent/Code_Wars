@@ -60,4 +60,51 @@ function check(arr, el) {
 
 const check = (arr, el) => arr.includes(el)
 
+/* Letters Shared between Two Words
+Create a function that returns the number of characters shared between two words.
+
+Examples
+sharedLetters("apple", "meaty") ➞ 2
+// Since "ea" is shared between "apple" and "meaty".
+
+sharedLetters("fan", "forsook") ➞ 1
+
+sharedLetters("spout", "shout") ➞ 4 */
+
+function sharedLetters(str1, str2) {
+	return str2.split("").filter(x => str1.includes(x)).length;
+}
+
+/* Name Greeting!
+Create a function that takes a name and returns a greeting in the form of a string. Don't use a normal function, use an arrow function.
+
+Examples
+helloName("Gerald") ➞ "Hello Gerald!"
+
+helloName("Tiffany") ➞ "Hello Tiffany!"
+
+helloName("Ed") ➞ "Hello Ed!" */
+
+const helloName = name => 'Hello '+ name + '!'
+
+/* Recreating the abs() Function
+The Math.abs() function returns the absolute value of a number. This means that it returns a number's positive value. You can think of it as the distance away from zero.
+
+Create a function that recreates this functionality.
+
+Examples
+absolute(-1.217197940) ➞ 1.21719794
+
+absolute(-12.1320) ➞ 12.132
+ 
+absolute(-544.0) ➞ 544
+
+absolute(4666) ➞ 4666
+
+absolute(-3.14) ➞ 3.14
+
+absolute(250) ➞ 250 */
+
+const absolute = (n) => n > 0 ? n : n*-1
+
 
