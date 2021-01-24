@@ -107,4 +107,60 @@ absolute(250) ➞ 250 */
 
 const absolute = (n) => n > 0 ? n : n*-1
 
+/* Leap Year Function ⌚
+Write a function that returns true if a year is a leap, otherwise it returns false.
+
+A year is a "leap year" if it lasts 366 days, instead of 365 in a typical year. That extra day is added to the end of the shorter month, dating as February 29.
+
+To eliminate this error, the Gregorian calendar stipulates that a year that is divisible by 100 (for example, 1900) is a leap year only if it is also divisible by 400. This is because they are divisible by 100 but not by 400. This is because they're divisible by 100 and 400.
+
+Look at the examples, if you need help look at the resources panel.
+
+Examples
+leapYear(1990) ➞ false
+
+leapYear(1924) ➞ true
+
+leapYear(2021) ➞ false */
+
+const leapYear = (year) => year % 4 == 0 ? true : false
+
+/* Who's The Oldest?
+Given an object containing the names and ages of a group of people, return the name of the oldest person.
+
+Examples
+oldest({
+  Emma: 71,
+  Jack: 45,
+  Amy: 15,
+  Ben: 29
+}) ➞ "Emma"
+
+oldest({
+  Max: 9,
+  Josh: 13,
+  Sam: 48,
+  Anne: 33
+}) ➞ "Sam" */
+
+const oldest = people => 
+Object.keys(people).reduce((a, b) => people[a] > people[b] ? a : b)
+
+/* Return Sole Element in a Set
+Given a set containing an element, return the sole element.
+
+Examples
+const first = new Set();
+first.add(1); 
+elementSet(first) ➞ 1
+
+const second = new Set();
+second.add("apple"); 
+elementSet(second) ➞ "apple"
+
+const third  = new Set();
+third.add(false); 
+elementSet(third) ➞ false */
+
+const elementSet = s => [...s][0]
 
