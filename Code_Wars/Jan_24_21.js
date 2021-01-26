@@ -62,3 +62,31 @@ Return the values as an array. */
 
 const otherSides = l => [l*2, +(l*Math.sqrt(3)).toFixed(2)]
 
+/* Assign Person to Occupation
+You have two arrays. One shows the names of the people names, while the other shows their occupation jobs. Your task is to create an object displaying each person to their respective occupation.
+
+Names	Jobs
+Annie	Teacher
+Steven	Engineer
+Lisa	Doctor
+Osman	Cashier
+Example
+const names = ["Dennis", "Vera", "Mabel", "Annette", "Sussan"]
+const jobs = ["Butcher", "Programmer", "Doctor", "Teacher", "Lecturer"]
+
+assignPersonToJob(names, jobs) ➞ {
+  Dennis: "Butcher",
+  Vera: "Programmer",
+  Mabel: "Doctor",
+  Annette: "Teacher",
+  Sussan: "Lecturer"
+} */
+
+const assignPersonToJob = (people, jobs) => {
+	const obj = {};
+	people.forEach((person, i) => obj[person] = jobs[i]);
+	return obj;
+}
+
+
+
