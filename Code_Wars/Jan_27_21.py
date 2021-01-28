@@ -55,3 +55,48 @@ how_many_seconds(24) ➞ 86400 """
 
 def convert_hours(hrs):
     return hrs * 60 * 60
+
+""" Return the Sum of Two Numbers
+Create a function that takes two numbers as arguments and return their sum.
+
+Examples
+addition(3, 2) ➞ 5
+
+addition(-3, -6) ➞ -9
+
+addition(7, 3) ➞ 10 """
+
+def addition(x,y)
+    return x + y
+
+""" Return the Factorial
+Create a function that takes an integer and returns the factorial of that integer. That is, the integer multiplied by all positive lower integers.
+
+Examples
+factorial(3) ➞ 6
+
+factorial(5) ➞ 120
+
+factorial(13) ➞ 6227020800 """
+
+import math
+
+def factorial(num):
+	return math.factorial(num)
+
+""" Radians to Degrees
+Create a function that takes an angle in radians and returns the corresponding angle in degrees rounded to one decimal place.
+
+Examples
+radians_to_degrees(1) ➞ 57.3
+
+radians_to_degrees(20) ➞ 1145.9
+
+radians_to_degrees(50) ➞ 2864.8 """
+
+from math import pi
+def radians_to_degrees(rad):
+  return round(rad*180/pi,1)
+
+
+
