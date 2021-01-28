@@ -98,5 +98,49 @@ from math import pi
 def radians_to_degrees(rad):
   return round(rad*180/pi,1)
 
+""" Count Ones in Binary Representation of Integer
+Count the amount of ones in the binary representation of an integer. For example, since 12 is 1100 in binary, the return value should be 2.
+
+Examples
+count_ones(0) ➞ 0
+
+count_ones(100) ➞ 3
+
+count_ones(999) ➞ 8 """
+
+def count_ones(num):
+	return bin(num).count('1')
+
+""" How Many Vowels?
+Create a function that takes a string and returns the number (count) of vowels contained within it.
+
+Examples
+count_vowels("Celebration") ➞ 5
+
+count_vowels("Palm") ➞ 1
+
+count_vowels("Prediction") ➞ 4 """
+
+def count_vowels(txt):
+	cnt = 0
+	for element in txt:
+		if element in 'aeiou':
+			cnt += 1
+	return cnt
+
+""" Default Mood
+Create a function that takes in a current mood and return a sentence in the following format: "Today, I am feeling {mood}". However, if no argument is passed, return "Today, I am feeling neutral".
+
+Examples
+mood_today("happy") ➞ "Today, I am feeling happy"
+
+mood_today("sad") ➞ "Today, I am feeling sad"
+
+mood_today() ➞ "Today, I am feeling neutral" """
+
+def mood_today(mood = 'neutral'):
+	return "Today, I am feeling " + mood
+
+
 
 
