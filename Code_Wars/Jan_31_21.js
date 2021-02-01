@@ -136,5 +136,77 @@ function canNest(arr1, arr2) {
 	}
 }
 
+/* This challenge will help you interpret mathematical relationships both algebraically and geometrically.
+
+Matchstick Houses, Steps 1, 2 and 3
+
+Create a function that takes a number (step) as an argument and returns the number of matchsticks in that step. See step 1, 2 and 3 in the image above.
+
+Examples
+matchHouses(1) ➞ 6
+
+matchHouses(4) ➞ 21
+
+matchHouses(87) ➞ 436 */
+
+function matchHouses(step) {
+	if (step == 0) {
+		return 0
+	}else{
+	return (step*6)-(step-1)
+	}
+}
+
+/* Left Shift by Powers of Two
+The left shift operation is similar to multiplication by powers of two.
+
+Sample calculation using the left shift operator (<<):
+
+10 << 3 = 10 * 2^3 = 10 * 8 = 80
+-32 << 2 = -32 * 2^2 = -32 * 4 = -128
+5 << 2 = 5 * 2^2 = 5 * 4 = 20
+Write a function that mimics (without the use of <<) the left shift operator and returns the result from the two given integers.
+
+Examples
+shiftToLeft(5, 2) ➞ 20
+
+shiftToLeft(10, 3) ➞ 80
+
+shiftToLeft(-32, 2) ➞ -128
+
+shiftToLeft(-6, 5) ➞ -192
+
+shiftToLeft(12, 4) ➞ 192
+
+shiftToLeft(46, 6) ➞ 2944 */
+
+const shiftToLeft = (x, y) => (Math.pow(2,y) * x)
+
+/* Largest Swap
+Write a function that takes a two-digit number and determines if it's the largest of two possible digit swaps.
+
+To illustrate:
+
+largestSwap(27) ➞ false
+
+largestSwap(43) ➞ true
+If 27 is our input, we should return false because swapping the digits gives us 72, and 72 > 27. On the other hand, swapping 43 gives us 34, and 43 > 34.
+
+Examples
+largestSwap(14) ➞ false
+
+largestSwap(53) ➞ true
+
+largestSwap(99) ➞ true */
+
+function largestSwap(num) {
+	var digits = num.toString().split('')
+	if (digits[0] >= digits[1]) {
+		return true
+	}else{
+		return false
+	}
+}
+
 
  
