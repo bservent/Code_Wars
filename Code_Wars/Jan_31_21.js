@@ -92,5 +92,49 @@ minMax([2334454, 5]) ➞ [5, 2334454]
 
 minMax([1]) ➞ [1, 1] */
 
+const minMax = (arr) => [Math.min(...arr), Math.max(...arr)]
+
+/* Add up the Numbers from a Single Number
+Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+
+Examples
+addUp(4) ➞ 10
+
+addUp(13) ➞ 91
+
+addUp(600) ➞ 180300 */
+
+function addUp(num) {
+	let sum = 0
+	for (let i = 0; i <= num; i++) {
+		sum += i
+	}
+	return sum
+}
+
+/* Check if One Array can be Nested in Another
+Create a function that returns true if the first array can be nested inside the second.
+
+arr1 can be nested inside arr2 if:
+
+arr1's min is greater than arr2's min.
+arr1's max is less than arr2's max.
+Examples
+canNest([1, 2, 3, 4], [0, 6]) ➞ true
+
+canNest([3, 1], [4, 0]) ➞ true
+
+canNest([9, 9, 8], [8, 9]) ➞ false
+
+canNest([1, 2, 3, 4], [2, 3]) ➞ false */
+
+function canNest(arr1, arr2) {
+	if (Math.min(...arr1) > Math.min(...arr2) && Math.max(...arr1) < Math.max(...arr2)) {
+		return true
+	}else{
+		return false
+	}
+}
+
 
  
