@@ -1,1 +1,1 @@
-# Code_Wars
+# Minos_Capstone
