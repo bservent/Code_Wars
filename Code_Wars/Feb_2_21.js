@@ -126,3 +126,4 @@ function potatoes(str) {
 	var arr = str.split("potato")
 	return arr.length-1
 }
+
