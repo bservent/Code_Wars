@@ -63,3 +63,51 @@ function error(n) {
 		5: 'Temperature Sensor Error: e5',
 	}[n] || 101
 }
+
+/* Write a function that returns 0 if the input is 1, and returns 1 if the input is 0.
+
+Examples
+flip(1) ➞ 0
+
+flip(0) ➞ 1
+Notes
+Try completing this challenge without using any:
+
+Conditionals
+Ternary operators
+Negations
+Bit operators */
+
+function flip(y) {
+	return (y + 1) % 2;
+}
+
+/* Come Check Out This Crazy Function
+You are given a function with two numbers, a and b. You are also given an output that shows the result of an expression that manipulates the two numbers to get to the output. What you are supposed to do is return what that expression is. I am not going to tell you what the expression is because that will spoil the fun! :)
+
+Examples
+crazyfunction(10, 20) ➞ 30
+
+crazyfunction(17, 35) ➞ 50
+
+crazyfunction(61, 233) ➞ 212 */
+
+function crazyfunction(a,b) {
+  return  a^b
+}
+
+/* Is it True?
+In this challenge you will be given a relation between two numbers, written as a string. Write a function that determines if the relation is true or false.
+
+Examples
+isTrue("2=2") ➞ true
+
+isTrue("8<7") ➞ false
+
+isTrue("5=13") ➞ false
+
+isTrue("15>4") ➞ true */
+
+function isTrue(relation) {
+  return eval(relation.replace('=', '==='))
+}
