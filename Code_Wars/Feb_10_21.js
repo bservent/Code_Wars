@@ -19,4 +19,20 @@ function firstVowel(str) {
 	return str.search(re)
 }
 
+/* Check If It's a Title String
+Check if a string title is a title string or not. A title string is one which has all the words in the string start with a upper case letter.
+
+Examples
+checkTitle("A Mind Boggling Achievement") ➞ true
+
+checkTitle("A Simple Java Script Program!") ➞ true
+
+checkTitle("Water is transparent") ➞ false */
+
+function checkTitle(title) {
+	return title.split(' ')
+		.map(el => el[0] == el[0].toUpperCase())
+		.includes(false) ? false : true;
+}
+
 
