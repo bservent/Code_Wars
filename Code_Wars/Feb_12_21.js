@@ -34,3 +34,24 @@ sortDrinkByPrice(drinks) ➞ [{name: "lime", price: 10}, {name: "lemonade", pric
 function sortDrinkByPrice(drinks) {
 	return drinks.sort((a,b)=> a.price - b.price)
 }
+
+/* Find the Highest Integer in the Array Using Recursion
+Create a function that finds the highest integer in the array using recursion.
+
+Examples
+findHighest([-1, 3, 5, 6, 99, 12, 2]) ➞ 99
+
+findHighest([0, 12, 4, 87]) ➞ 87
+
+findHighest([6,7,8]) ➞ 8 */
+
+function findHighest(arr){
+  let max = arr[0];
+	for (let i = 0; i < arr.length; i++){
+		if (arr[i] > max){
+			max = arr[i];
+		}
+	}
+	return max;
+}
+
