@@ -26,3 +26,25 @@ inkLevels({
 function inkLevels(inks) {
   return Math.min(...Object.values(inks))
 }
+
+/* Return Types
+Create a function that takes an array and returns the types of values (data types) in a new array.
+
+Examples
+arrayValuesTypes([1, 2, "null", []])
+➞ ["number", "number", "string", "array"]
+
+arrayValuesTypes(["214", true, false, 2, 2.15, [], null])
+➞ ["string", "boolean", "boolean", "number", "number", "array", "object"]
+
+arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214])
+➞ ["number", "string", "string", "array", "object", "boolean", "number"] */
+
+function arrayValuesTypes(arr) {
+	let a = []
+	for (i=0; i<arr.length; i++) {
+		a.push(typeof arr[i])
+	}
+	return a
+}
+
