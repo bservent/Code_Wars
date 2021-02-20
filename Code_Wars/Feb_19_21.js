@@ -21,3 +21,15 @@ function sortByLength(arr) {
 		return arr.sort((a,b) => a.length - b.length)
 }
 
+/* Pi to N Decimal Places
+Given a number n, write a function that returns PI to n decimal places.
+
+Examples
+myPi(5) ➞ 3.14159
+
+myPi(4) ➞ 3.1416
+
+myPi(15) ➞ 3.141592653589793 */
+
+const myPi = (n) => Number((Math.PI).toFixed(n))
+
