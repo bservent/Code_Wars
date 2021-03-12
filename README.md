@@ -1,1 +1,1 @@
-# Minos_Capstone
+# Quintrix_Notes
