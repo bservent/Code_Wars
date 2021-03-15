@@ -11,3 +11,5 @@ getDecimalPlaces("3.1") ➞ 1 */
 function getDecimalPlaces(num) {
   return num.slice(num.indexOf(".")).length -1
 }
+
+
