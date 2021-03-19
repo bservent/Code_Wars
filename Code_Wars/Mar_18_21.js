@@ -37,3 +37,26 @@ sortByLength(["Turing", "Einstein", "Jung"])
 ➞ ["Jung", "Turing", "Einstein"] */
 
 const sortByLength = (arr) => arr.sort((a,b) => (a.length - b.length));
+
+/* Recursion to Repeat a String n Number of Times
+Create a recursive function that takes two parameters and repeats the string n number of times. The first parameter txt is the string to be repeated and the second parameter is the number of times the string is to be repeated.
+
+String.prototype.repeat() is not allowed
+
+Examples
+repetition("ab", 3) ➞ "ababab"
+
+repetition("kiwi", 1) ➞ "kiwi"
+
+repetition("cherry", 2) ➞ "cherrycherry"
+Notes
+The second parameter of the function is positive integer. */
+
+function repetition(txt, n) {
+	let newString = "";
+	while (n > 0) {
+		newString += txt;
+		n--;
+	}
+	return newString;
+}
