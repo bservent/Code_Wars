@@ -1,1 +1,1 @@
-# Quintrix_Notes
+# Python_Basics
