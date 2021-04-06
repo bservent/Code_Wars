@@ -34,3 +34,26 @@ function sayHelloBye(name, num) {
 	}
 }
 
+/* Reverse the Case
+Given a string, create a function to reverse the case. All lower-cased letters should be upper-cased, and vice versa.
+
+Examples
+reverseCase("Happy Birthday") ➞ "hAPPY bIRTHDAY"
+
+reverseCase("MANY THANKS") ➞ "many thanks"
+
+reverseCase("sPoNtAnEoUs") ➞ "SpOnTaNeOuS" */
+
+function reverseCase(str) {
+	str.split('');
+	let result = [];
+	for (let i = 0; i < str.length; i++){
+		if(str[i] == str[i].toUpperCase()){
+			 result.push(str[i].toLowerCase())
+		}else{
+			 result.push(str[i].toUpperCase())
+		}
+	}
+	return result.join('').toString()
+}
+
