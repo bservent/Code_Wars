@@ -26,8 +26,27 @@ remainder(-9, 45) ➞ -9
 
 remainder(5, 5) ➞ 0 */
 
-function remainder(x,y) {
+/* function remainder(x,y) {
   return x % y
 }
 
-console.log(remainder(4,4))
+console.log(remainder(4,4)) */
+
+/* Find the Smallest and Biggest Numbers
+Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
+
+Examples
+minMax([1, 2, 3, 4, 5]) ➞ [1, 5]
+
+minMax([2334454, 5]) ➞ [5, 2334454]
+
+minMax([1]) ➞ [1, 1] */
+
+function minMax(arr){
+  arr = arr.sort(function(a,b){
+    return a - b
+  })
+  return [arr[0], arr[arr.length-1]]
+}
+
+console.log(minMax([1,2,3]))
