@@ -40,3 +40,8 @@ var addStrings = function(num1, num2) {
 
 console.log(addStrings('1', '2'));
 
+//Sort arr by length in ascending order
+
+function sortByLength(arr) {
+	return arr.sort((a, b) => a.length - b.length)
+}
