@@ -43,3 +43,4 @@ function numberSplit(n) {
 	const result = (n/2);
 	return [Math.floor(result), Math.ceil(result)];
 }
+
