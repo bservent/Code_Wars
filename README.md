@@ -1,1 +1,1 @@
-# Python_Basics
+# Weird_JS
